@@ -1,0 +1,36 @@
+.nav{
+    // background-color: #313e5996;
+    // background-color: #2673028e;
+    //opacity dla IE oraz EDGE
+    // background-color: #267302;
+    // opacity: 0.6; 
+    //przezroczystosc na IE ! Dobrać kolor
+    background-color: rgba(38, 115, 2, 0.6);
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Times New Roman', Times, serif;
+
+    @include medium {
+        justify-content: space-evenly;
+    }
+
+    &__item{
+        font-size: 3.2rem;
+
+        @include medium {
+            font-size: 2rem;
+        }
+    }
+
+    &__link{
+        text-decoration: none;
+        display: block;
+        padding: 2*$grid-base;
+        color: whitesmoke;
+        transition: all .25s;
+        &:hover{
+            color:$color-darkGreen;
+            
+        }
+    }
+}

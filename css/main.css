@@ -1,0 +1,275 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-family: 'Montserrat', cursive; }
+
+p {
+  padding: 20px;
+  font-size: 1.8rem;
+  line-height: 2.8rem; }
+
+.container {
+  width: 100%;
+  margin: 0 auto; }
+  @media all and (max-width: 768px) {
+    .container {
+      max-width: 74rem; } }
+  @media all and (min-width: 1240px) {
+    .container {
+      max-width: 112rem; } }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 15px; }
+  @media all and (max-width: 768px) {
+    .row {
+      flex-direction: column; } }
+
+.col {
+  width: 100%;
+  z-index: 99999999; }
+
+.nav {
+  background-color: rgba(38, 115, 2, 0.6);
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Times New Roman', Times, serif; }
+  @media all and (max-width: 768px) {
+    .nav {
+      justify-content: space-evenly; } }
+  .nav__item {
+    font-size: 3.2rem; }
+    @media all and (max-width: 768px) {
+      .nav__item {
+        font-size: 2rem; } }
+  .nav__link {
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    color: whitesmoke;
+    transition: all .25s; }
+    .nav__link:hover {
+      color: #034001; }
+
+.heading--h1 {
+  color: black;
+  font-size: 4rem;
+  text-align: center; }
+  @media all and (max-width: 768px) {
+    .heading--h1 {
+      color: whitesmoke; } }
+  @media all and (max-width: 880px) {
+    .heading--h1 {
+      font-size: 1.8rem;
+      padding-top: 3rem;
+      color: whitesmoke; } }
+  @media all and (max-width: 1156px) {
+    .heading--h1 {
+      font-size: 2.5rem;
+      padding-top: 2rem; } }
+.heading--h2 {
+  width: 100%;
+  font-size: 3.5rem;
+  text-align: center; }
+
+.form {
+  width: 45%;
+  font-size: 1.8rem; }
+  @media all and (max-width: 768px) {
+    .form {
+      width: 60%; } }
+  .form__label {
+    font-size: 1.8rem; }
+  .form__item {
+    color: #ffffff;
+    display: block;
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 1.4rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    border: .1rem solid #ffffff;
+    border-radius: .4rem;
+    outline: 0;
+    resize: none;
+    font-family: inherit; }
+    .form__item:focus {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #ffffff; }
+    .form__item[type="submit"]:hover {
+      background-color: rgba(255, 255, 255, 0.2); }
+
+.blackout {
+  background-color: rgba(0, 0, 0, 0.326); }
+
+.uorderItem {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  margin-left: 35px; }
+
+.site-header {
+  background: url(../assets/img/bg_header.jpg) center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+  background-attachment: fixed; }
+  @media all and (max-width: 768px) {
+    .site-header {
+      background: url(../assets/img/header_for_iphone.jpg) center/cover no-repeat; } }
+  .site-header__nav {
+    width: 100%;
+    position: absolute;
+    text-align: center; }
+  .site-header__logo {
+    position: absolute;
+    font-size: 3.2rem;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    z-index: 999; }
+    @media all and (max-width: 768px) {
+      .site-header__logo {
+        display: none; } }
+  .site-header__h1 {
+    position: absolute;
+    width: 30%;
+    left: 10%;
+    top: 35%;
+    letter-spacing: 1rem; }
+    @media all and (max-width: 880px) {
+      .site-header__h1 {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #217032ab;
+        font-size: 2rem;
+        padding: 1rem;
+        border-radius: .4rem;
+        width: 80%;
+        text-align: center;
+        box-shadow: 0 0 40px 5px #0a470f; } }
+
+.site-section {
+  padding-top: 3rem;
+  min-height: 60vh; }
+
+.site-offer {
+  padding-top: 3rem;
+  background-color: rgba(22, 160, 52, 0.6);
+  min-height: 70vh;
+  color: whitesmoke;
+  position: relative; }
+  .site-offer__blackout {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; }
+  .site-offer__h2 {
+    color: #ffffff;
+    position: absolute; }
+
+.site-localization {
+  padding: 30px; }
+  .site-localization__h2 {
+    padding-bottom: 3rem; }
+
+.site-contact {
+  background-color: rgba(22, 160, 52, 0.6);
+  color: whitesmoke;
+  position: relative;
+  min-height: 110vh; }
+  @media all and (max-width: 768px) {
+    .site-contact {
+      min-height: 140vh; } }
+  .site-contact__blackout {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; }
+  .site-contact__h2 {
+    position: absolute;
+    padding-top: 3rem; }
+  .site-contact__form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%); }
+
+.site-footer {
+  position: relative;
+  height: 35vh; }
+  .site-footer__h2 {
+    position: absolute;
+    padding-top: 3rem; }
+  .site-footer__address {
+    text-align: center;
+    padding-top: 8rem;
+    font-size: 1.8rem; }
+  .site-footer__copyright {
+    text-align: center;
+    font-size: 1.2rem; }
+
+.text-color-white {
+  color: whitesmoke; }
+
+.padding {
+  padding-top: 6rem; }
+
+/*# sourceMappingURL=main.css.map */

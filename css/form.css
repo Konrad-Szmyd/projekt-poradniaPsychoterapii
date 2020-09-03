@@ -1,0 +1,47 @@
+
+
+.alert {
+    width: 25%;
+    padding: 2rem; 
+    border-radius: .4rem;
+}
+
+.alert-danger {
+    background-color: rgba(227, 48, 48, 0.6);
+    padding-bottom: 1.6rem;
+}
+
+.alert-success {
+    z-index: 9999999999999999999999999;
+    /* width: 95%;
+    margin: 8rem auto;
+    text-align: center;
+    padding-top: 8rem;
+    font-size: 1.6rem; */
+    width: 95%;
+    margin: 5rem auto;
+    text-align: center;
+    padding: 1.6rem;
+    font-size: 1.6rem;
+    background-color: rgba(207, 128, 24, 0.65);
+}
+
+
+
+form .g-recaptcha {
+    
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    width: 30rem;
+    margin: auto;
+}
+@media all and (max-width: 768px) {
+    form .g-recaptcha {
+      transform: translateX(-15%);
+      
+    }
+}
+
+
+

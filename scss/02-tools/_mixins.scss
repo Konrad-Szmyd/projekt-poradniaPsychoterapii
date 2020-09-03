@@ -1,0 +1,27 @@
+@mixin medium {
+    @media all and (max-width: #{$bp-md}) {
+        @content;
+    }
+}
+//880
+@mixin medium988 {
+    @media all and (max-width: #{$bp-md2}) {
+        @content;
+    }
+}
+
+@mixin medium1156 {
+    @media all and (max-width: #{$bp-md3}) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media all and (min-width: #{$bp-lg}) {
+        @content;
+    }
+}
+
+//moje
+
+

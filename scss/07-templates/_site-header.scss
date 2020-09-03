@@ -1,0 +1,54 @@
+.site-header{
+    background: url(../assets/img/bg_header.jpg) center/cover no-repeat;
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+    //header for iphone
+    @include medium {
+        background: url(../assets/img/header_for_iphone.jpg) center/cover no-repeat;
+    } 
+
+    &__nav{
+        width: 100%;
+        position: absolute;
+        text-align: center;
+    }
+
+    &__logo{
+        position: absolute;
+        font-size: 3.2rem;
+        padding-top: 2*$grid-base;
+        padding-left: 2*$grid-base;
+        color: whitesmoke;
+        text-decoration: none;
+        z-index: 999;
+
+        @include medium {
+            display: none;
+        }
+    }
+
+    &__h1{
+        position: absolute;
+        width: 30%;
+        left: 10%;
+        top: 35%;
+        letter-spacing: 1rem;
+        
+        @include medium988 {
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #217032ab;
+                font-size: 2rem;
+                padding: 1rem;
+                border-radius: .4rem;
+                width: 80%;
+                text-align: center;
+                box-shadow: 0 0 40px 5px rgb(10, 71, 15);
+            
+        }
+    }
+
+}

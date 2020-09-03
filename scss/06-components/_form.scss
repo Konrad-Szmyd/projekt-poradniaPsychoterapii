@@ -1,0 +1,39 @@
+.form{
+    width: 45%;
+    font-size: 1.8rem;
+    
+    @include medium{
+        width: 60%;
+    }
+
+
+    &__label {
+        font-size: 1.8rem;
+    }
+
+    &__item {
+        color: #ffffff;
+        display: block;
+        width: 100%;
+        font-size: 1.8rem;
+        padding: 1.4rem;
+        background-color: rgba(0,0,0,.4);
+        margin-bottom: 1.5rem;
+        margin-top: 1rem; 
+        border: .1rem solid #ffffff;
+        border-radius: .4rem;
+        // zewnętrzne obramowanie to outline
+        outline: 0;
+        resize: none;
+        font-family: inherit;
+        // transition-duration: .5s;
+
+        &:focus{
+            background-color: rgba(255, 255, 255, .2);
+            color: #ffffff;
+        }
+        &[type="submit"]:hover{
+            background-color: rgba(255, 255, 255, .2);
+    }
+    }
+}
